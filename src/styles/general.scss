@@ -1,0 +1,21 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 700;
+  background-color: rgb(241, 230, 230);
+}
+.btn {
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  margin: 5px;
+  margin-right: 35px;
+  width: 140px;
+  text-align: center;
+  direction: rtl;
+  cursor: pointer;
+}

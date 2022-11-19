@@ -1,0 +1,40 @@
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+  padding: 8px;
+  height: 4rem;
+  .image {
+    max-width: 100px;
+    max-height: 90px;
+  }
+  .price {
+    height: 50%;
+    width: 5rem;
+
+    padding: 8px 12px;
+    color: rgb(39, 34, 34);
+  }
+  .choose-quantity {
+    width: 19px;
+    margin-left: 5px;
+  }
+  option {
+    text-align: center;
+  }
+}
+
+.total-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  font-size: 15px;
+}
+
+.empty-cart-msg {
+  text-align: center;
+  font-size: 25px;
+  margin: auto;
+}
