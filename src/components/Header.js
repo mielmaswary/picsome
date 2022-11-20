@@ -4,10 +4,10 @@ import Photos from "../pages/Photos";
 const Header = () => {
   return (
     <div className="main-nav">
-      <Link to="/picsome">
+      <Link to="/">
         <h1>פיק-מי!</h1>
       </Link>
-      <Link to="/picsome/cart">
+      <Link to="/cart">
         <div className="ri-shopping-cart-line ri-fw ri-2x"></div>
       </Link>
     </div>

@@ -13,7 +13,7 @@ const Button = (props) => {
     setOrderRecived(true);
     setCart([]);
     setTimeout(() => {
-      navigate("/picsome/");
+      navigate("/");
       setOrderRecived(false);
     }, 3000);
   };

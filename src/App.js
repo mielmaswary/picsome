@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Link,
+  Route,
+  Routes,
+  HashRouter,
+} from "react-router-dom";
 import Cart from "./pages/Cart";
 import Photos from "./pages/Photos";
 import OrderRecived from "./components/OrderRecived";
@@ -31,17 +37,17 @@ const App = () => {
     localStorage.setItem("pic-some-cart", JSON.stringify(cart));
   }, [cart]);
   return (
-    <BrowserRouter>
+    <HashRouter>
       <OrderRecivedContext.Provider value={{ orderRecived, setOrderRecived }}>
         <CartContext.Provider value={{ cart, setCart }}>
           <PhotosContext.Provider value={{ photosData, setPhotosData }}>
             <Header />
 
             <Routes>
-              <Route exact path="/picsome/" element={<Photos />} />
+              <Route exact path="/" element={<Photos />} />
 
               <Route
-                path="/picsome/cart/"
+                path="/cart"
                 element={
                   orderRecived ? (
                     <OrderRecived />
@@ -57,7 +63,7 @@ const App = () => {
           </PhotosContext.Provider>
         </CartContext.Provider>
       </OrderRecivedContext.Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
