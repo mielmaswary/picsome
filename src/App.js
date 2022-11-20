@@ -38,11 +38,11 @@ const App = () => {
             <Header />
 
             <Routes>
-              <Route exact path="/" element={<Photos />} />
+              <Route exact path="/picsome" element={<Photos />} />
 
               <Route
                 exact
-                path="/cart"
+                path="/picsome/cart"
                 element={
                   orderRecived ? (
                     <OrderRecived />
