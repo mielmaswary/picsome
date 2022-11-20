@@ -13,7 +13,7 @@ const Button = (props) => {
     setOrderRecived(true);
     setCart([]);
     setTimeout(() => {
-      navigate("https://mielmaswary.github.io/picsome/");
+      navigate(-1);
       setOrderRecived(false);
     }, 3000);
   };
