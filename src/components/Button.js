@@ -19,7 +19,7 @@ const Button = (props) => {
   };
   return (
     <div onClick={handleClick} className="btn">
-      {value}
+      {test}
     </div>
   );
 };
